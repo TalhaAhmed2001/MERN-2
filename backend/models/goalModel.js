@@ -1,13 +1,13 @@
 const mongoose = require("mongoose")
 
 const goalSchema = mongoose.Schema({
-    text : {
+    text: {
         type: String,
         required: [true, 'Please add text value'],
     },
 },
-{
-    timestamps: true
-})
+    {
+        timestamps: true
+    })
 
-module.exports = mongoose.model('Goal',goalSchema)
+module.exports = mongoose.model('Goal', goalSchema)
